@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="activity-form.css">
+    
+</head>
+<body>
+    <div class="row" id="logo">
+        <div class="col-6" >
+        <header>
+            <h1> Activity Form</h1>
+        </header>
+        </div>
+        <div class="col-6" , cllas="img-logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd5PtA0onGe-_1jQXYJMFm8f2E05YWgKyiLxewjeV8ZQ&s">
+        </div>
+    </div>
+
+    <form>
+
+    <div class="container">
+        
+        <div class="row">
+                <label for="name">Full Name:</label> 
+                <input type="text" id="name" name="name" required>
+        </div>
+       
+        <div class="row">
+                 <label for="name">gender(tick coreect option):</label>
+                 <div class="male"><input type="radio" id="male" name="gender" required/><label for="male">male</label></div>
+                <div class="female"><input type="radio" id="female" name="gender" required/><label for="female">female</label></div>
+        </div>
+        
+        <div class="row">  
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4"></textarea>
+        </div>
+        
+        <div class="row">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+        </div>
+       
+        <div class="row">
+                <label for="phone">mobail Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+        </div>
+    
+        <div class="row">    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="row">
+                <label for="fatherName">Father/mother/guardian name:</label>
+                <input type="text" id="fatherName" name="fatherName" required>
+        </div>
+        
+        <div class="row">
+                <label for="phone">fhather/mother/guardian mobail Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+        </div>
+        
+        <div class="row">
+            <label for="memberCategory">Member Category:</label>    
+           
+            <select id="memberCategory" name="memberCategory" required>
+                <option value="officialMember">Official Member</option>
+                <option value="familyMember">Family Member</option>
+                <option value="semiGovernment">Semi-Government</option>
+                <option value="seniorCitizen">Senior Citizen (60+)</option>
+                <option value="private">Private</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label for="sports">sports for which you want membership:</label>
+           
+            <select id="sports" name="sports" multiple>
+                <option value="aerobics">Aerobics</option>
+                <option value="basketball">Basketball</option>
+                <option value="badminton">Badminton</option>
+                <option value="chess">Chess</option>
+                <option value="fitness-center">Fitness Center</option>
+                <option value="karate">Karate</option>
+                <option value="pool-billiards-snooker">Pool/Billiards/Snooker</option>
+                <option value="skating">Skating</option>
+                <option value="swimming">Swimming</option>
+                <option value="table-tennis">Table Tennis</option>
+                <option value="tennis">Tennis</option>
+                <option value="volleyball">Volleyball</option>
+                <option value="yoga">Yoga</option>
+            </select>
+        </div>
+        
+        <div class="row">
+            <label for="medical-info">Medical Information</label>
+
+            <div class="col">
+                <label for="bloodGroup">Blood Group:</label>
+                <input type="text" id="bloodGroup" name="bloodGroup" required>
+            </div>
+            
+            <div class="col">
+                <label for="currentHealthProblems">Any Current Health Problems:</label>
+                <textarea id="currentHealthProblems" name="currentHealthProblems" rows="4" required></textarea>
+            </div>
+            
+            <div class="col">
+                <label for="pastHealthProblems">Any Past Health Problems:</label>
+                <textarea id="pastHealthProblems" name="pastHealthProblems" rows="4" required></textarea>
+            </div>
+        </div>
+            
+        <div class="row">
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+        </div>
+    
+    </div>
+
+    </form>
+            <input class="btn btn-primary" type="submit" value="Submit" width="90%">
+    
+    
+</body>
+</html>
